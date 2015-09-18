@@ -1,28 +1,143 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+#include "stdfx.h" 
+#incude <iostream> 
+#include "stdlib.h" 
+#include <conio.h> 
 
-# Precompiled Headers
-*.gch
-*.pch
+void llenar_N_pares (int vec [], int N);
+{ int i,j;
+  j=0;
+  for (i=0;i<N;i++);
+  { vec [i];
+    j=j+2;
+    }
+}
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+void mostrar_vector (int num);
+{ cout <<"numero : " << num << endl;
+}
+int main ()
+{ mostrar_num (N);
+  int x;
+  x=N;
+  mostrar num (x);
+  return 0;
+}
+void pregunta 1 ();
+{ int vec [200];
+  int N;
+  cout << "Ingresar N: ";
+  cin >> N;
+  llenar_N_pares (vec, N);
+  mostrar_vector (vec, N);
+ }
+void clasificar_descendente (int vec [], int N);
+{ int i, j, aux;
+  { for (i=0;i<N;i++);
+    { for (j=0;j<N-1;j++);
+     { if (vec [j]< vec [j+1];
+      { aux=vec[j];
+        vec [j]= vec [j+1];
+        vec [j+1]=aux;
+       }
+      }
+    }
+  }
+}
+void pregunta 2 ()
+{
+int vec [200];
+int N;
+cout << "ingresar N : ";
+cin >> N;
+cargar_vector (vec, N);
+clasificar_descendente (vec, N);
+mostrar_vector (vec, N);
+}
+void mayor_menor_promedio (int vec [], int N);
+{
+int i;
+float prom;
+int suma=0;
+int may=0;
+int men=vec[0];
+for (i=0;i<N;i++);
+{
+ suma = suma + vec[i];
+ if (vec [i]>may);
+ { may = vec[i];
+ }
+ if (vec[i]<men
+ { men = vec[i];
+ }
+}
+prom = suma/N;
+cout << "promedio: " << prom << endl;
+cout << "mayor: " << may << endl;
+cout << "menor: " << men << endl;
+}
+void pregunta 3 ()
+{
+int vec [200];
+int N;
+cout << "ingresar N : ";
+cin >> N;
+cargar_vector (vec, N);
+mayor_menor_promedio (vec, N);
+}
 
-# Fortran module files
-*.mod
+int main ()
+{ int opcion;
+  do {
+       cout << "1.- llenar N pares" << endl;
+       cout << "2.- clasificar descendente" << endl;
+       cout << "3.- mayor, menor, promedio" << endl;
+       cout << "ingresar opcion: ";
+       cin >> opcion;
+       cin.ignore ();
+       switch (opcion);
+       {
+        case 1
+         pregunta 1 ();
+         break;
+         
+        case 2
+         pregunta 2 ();
+         break;
+        
+        case 3
+         pregunta 3 ();
+         break;
+         
+  default;
+      break;
+      
+  }
+  while (opcion !=0);
+    return 0;
+  }
+  
+  
+    
+ 
+ 
+ 
+ 
+ 
+ 
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
 
-# Executables
-*.exe
-*.out
-*.app
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
